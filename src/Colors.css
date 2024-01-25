@@ -1,0 +1,29 @@
+:root {
+    --black: #000000;
+    --blue: rgb(53, 98, 223);
+    --gray: #4e4e4f;
+    --white: #ffffff;
+}
+.element {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.bg-dark {
+    background-color: var(--black);
+}
+
+.bg-light {
+    background-color: var(--gray);
+}
+
+.nav,
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+}

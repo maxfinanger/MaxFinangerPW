@@ -1,0 +1,25 @@
+body,
+html {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.map {
+    height: 30rem;
+    width: 100%;
+}
+
+.carousel {
+    height: 30rem;
+    width: auto;
+    z-index: 3;
+}

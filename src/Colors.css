@@ -27,3 +27,7 @@ body {
     background-color: var(--black);
     color: var(--white);
 }
+
+.carousel {
+    z-index: 5;
+}

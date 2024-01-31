@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from "react";
+import Dalle1 from "./images/Dalle1.png";
+import Dalle2 from "./images/Dalle2.png";
+// ... import other images
 
 const Carousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        "./images/Dalle1.png",
-        "./images/Dalle2.png",
-        "./images/Dalle3.png",
-        "./images/Dalle4.png",
-        "./images/Dalle5.png",
-        "./images/Dalle6.png",
-        "./images/Dalle7.png",
-        "./images/Dalle8.png",
-        "./images/Dalle9.png",
-        "./images/Dalle10.png",
+        Dalle1,
+        Dalle2,
+        // ... other images
     ];
 
     useEffect(() => {
@@ -22,22 +18,14 @@ const Carousel: React.FC = () => {
         }, 3000);
 
         return () => clearInterval(timer);
-    }, []);
+    }, [currentIndex, images.length]);
 
-    /* return (
-        <div>
-            <div className="carousel">
-                <img
-                    src={images[currentIndex]}
-                    alt={`Carousel Image ${currentIndex + 1}`}
-                />
-            </div>
-        </div>
-    );
-    */
     return (
         <div className="carousel">
-            <img src="/images/Dalle1.png" alt="Test Image" />
+            <img
+                src={images[currentIndex]}
+                alt={`Carousel Image ${currentIndex + 1}`}
+            />
         </div>
     );
 };

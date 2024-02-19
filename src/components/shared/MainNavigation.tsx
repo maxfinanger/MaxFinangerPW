@@ -13,10 +13,15 @@ const MainNavigation = () => {
             <Container className="d-flex justify-content-between">
                 <Navbar.Brand as={NavLink} to="/">
                     <img
-                        src="../public/images/Dalle1.png"
+                        src="../../MaxFinangerPW/public/images/Dalle2.png"
                         className="img-fluid rounded-pill"
                         alt="logo-image"
-                        style={{ width: "5%", height: "5%" }}
+                        style={{
+                            width: "5%",
+                            height: "5%",
+                            minHeight: "50px",
+                            minWidth: "50px",
+                        }}
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
